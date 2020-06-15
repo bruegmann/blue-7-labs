@@ -29,7 +29,8 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "theme":    $theme
+    "theme": $theme,
+    "trans": rgba(0,0,0,.3)
   ),
   $theme-colors
 );
