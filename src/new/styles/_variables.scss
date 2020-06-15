@@ -34,3 +34,14 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    touchy: 48px
+  ),
+  $sizes
+);
