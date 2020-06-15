@@ -1,0 +1,35 @@
+/* Bootstrap */
+$gray-300: #dee2e6 !default;
+
+$primary: #007bff !default;
+$light: $gray-300;
+
+// Components
+//
+
+$border-radius: .5rem;
+$border-radius-lg: .7rem;
+$border-radius-sm: .3rem;
+
+
+// Buttons
+//
+
+$btn-border-radius: 1000px;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+/* Bootstrap ENDE */
+
+
+// Main color theme. E.g. used for background for body and sidebar.
+$theme: $primary !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "theme":    $theme
+  ),
+  $theme-colors
+);
