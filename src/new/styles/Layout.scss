@@ -1,0 +1,11 @@
+.SidebarButtonIndicator {
+    transition: transform .2s;
+}
+
+.Layout {
+    &.transition {
+        .Pane {
+            transition: width .2s;
+        }
+    }
+}

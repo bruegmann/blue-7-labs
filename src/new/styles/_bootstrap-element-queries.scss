@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/mixins";
+
+/**
+    CSS Elements Queries (https://github.com/marcj/css-element-queries) support for Bootstrap's Grid System.
+    Just add the class name ".element-query" to the parent element.
+*/
+
+/** Usage: col-md-2 */
+@mixin make-grid-columns-eq($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+    @each $breakpoint in map-keys($breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+        @for $i from 1 through $columns {
+            .col#{$infix}-#{$i} {
+                flex: initial;
+                max-width: initial;
+            }
+        }
+
+        &[min-width~="#{breakpoint-min($breakpoint, $breakpoints)}"] {
+            @for $i from 1 through $columns {
+                .col#{$infix}-#{$i} {
+                  @include make-col($i, $columns);
+                }
+            }
+        }
+    }
+}
+
+/** Usage: .eq-d-none */
+@mixin d-utility-element-query($breakpoints: $grid-breakpoints) {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        &[min-width~="#{breakpoint-min($breakpoint, $breakpoints)}"] {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            @each $value in $displays {
+                .eq-d#{$infix}-#{$value} { display: $value !important; }
+            }
+        }
+    }
+}
+
+.element-query {
+    @include make-grid-columns-eq();
+    @include d-utility-element-query();
+}

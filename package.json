@@ -13,6 +13,7 @@
     "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
+    "css-element-queries": "^1.2.3",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
