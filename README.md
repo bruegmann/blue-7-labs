@@ -1,3 +1,17 @@
+# blue-7-labs
+
+Dieses Repository dient als Spielewiese, um neue Dinge für Blue 7 auszuprobieren.
+
+Unter [https://bruegmann.github.io/blue-7-labs/](https://bruegmann.github.io/blue-7-labs/) befindet sich eine Live-Version. Die Dateien dafür liegen unter `/docs`.\
+So können Änderungen veröffentlicht werden:
+
+1. `/docs`-Ordner löschen
+2. `npm run build` ausführen
+3. Generierten `/build`-Ordner in `/docs` umbenennen
+3. Commit und Push
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
