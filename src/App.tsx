@@ -7,12 +7,17 @@ import {
     Route
 } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
+import { ThirdPage } from "./pages/ThirdPage";
 
 function App() {
     return (
         <Router>
             <>
                 <Switch>
+                    <Route path="/third">
+                        <ThirdPage />
+                    </Route>
+
                     <Route path="/">
                         <HomePage />
                     </Route>

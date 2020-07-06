@@ -80,6 +80,9 @@ export function Layout({ children, appLogo, appTitle }: ILayoutProps) {
                         <SidebarButton href="#" onClick={() => setCurrent(1)} label="Second">
                             <span role="img" aria-label="Astro cat" className="mx-1">🐱‍🚀</span>
                         </SidebarButton>
+                        <SidebarButton href="/third" onClick={() => setCurrent(1)} label="Third">
+                            <span role="img" aria-label="Stunt cat" className="mx-1">🐱‍🏍</span>
+                        </SidebarButton>
                     </div>
                 </div>
 
