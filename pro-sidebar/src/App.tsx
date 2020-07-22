@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem, SidebarContent, SidebarHeader, SubMenu } from "react-pro-sidebar";
 import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-import { Asterisk, House, List } from "react-bootstrap-icons";
+import { Asterisk, House, List, Funnel } from "react-bootstrap-icons";
 import classNames from "classnames";
 
 import BlueLogo from "./components/BlueLogo";
 import "./styles/main.scss";
+import { FilterPage } from "./pages/FilterPage";
 
 function App() {
     const [collapsed, setCollapsed] = useState<boolean>(false);
@@ -24,7 +25,7 @@ function App() {
                     breakPoint="md"
                 >
                     <SidebarHeader>
-                        <h3 className="px-4 py-3 mb-0 d-flex">
+                        <h3 className="px-4 py-3 mb-0 d-flex text-nowrap">
                             <BlueLogo /> <small className={classNames("ml-1", { "d-none": collapsed })}>Blue React</small>
                         </h3>
                     </SidebarHeader>
@@ -39,6 +40,11 @@ function App() {
                             <MenuItem icon={<House />}>
                                 <NavLink to="/">Home</NavLink>
                             </MenuItem>
+                            <MenuItem icon={<Funnel />}>
+                                <NavLink to="/filter">
+                                    Filter
+                                </NavLink>
+                            </MenuItem>
                             <SubMenu title="More" icon={<Asterisk />}>
                                 <MenuItem icon={<Asterisk />}>
                                     <NavLink to="/second">Second page</NavLink>
@@ -48,22 +54,28 @@ function App() {
                     </SidebarContent>
                 </ProSidebar>
 
-                <div className="container-fluid pt-3">
-                    <button className="d-md-none btn btn-lg btn-primary mb-3" onClick={toggleToggled}>
+                <div className="pt-3 w-100">
+                    <button className="d-md-none btn btn-outline-primary mb-4 mx-3" onClick={toggleToggled}>
                         <List /> Toggle menu
                     </button>
 
                     <Switch>
+                        <Route path="/filter">
+                            <FilterPage />
+                        </Route>
+
                         <Route path="/second">
-                            <h1>Second page</h1>
+                            <div className="container">
+                                <h1>Second page</h1>
+                            </div>
                         </Route>
 
                         <Route path="/">
-                            <>
+                            <div className="container">
                                 <h1 className="mb-3">Home page</h1>
                                 <p>Resize the window to see how the sidebar behaves!</p>
                                 <p>The sidebar is using <a href="https://github.com/azouaoui-med/react-pro-sidebar" target="_blank" rel="noopener noreferrer">https://github.com/azouaoui-med/react-pro-sidebar</a></p>
-                            </>
+                            </div>
                         </Route>
                     </Switch>
                 </div>
