@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/blue-7-labs/pro-sidebar/static/css/main.35d4ba75.chunk.css",
+    "main.js": "/blue-7-labs/pro-sidebar/static/js/main.e7b87bbc.chunk.js",
+    "main.js.map": "/blue-7-labs/pro-sidebar/static/js/main.e7b87bbc.chunk.js.map",
+    "runtime-main.js": "/blue-7-labs/pro-sidebar/static/js/runtime-main.86390db0.js",
+    "runtime-main.js.map": "/blue-7-labs/pro-sidebar/static/js/runtime-main.86390db0.js.map",
+    "static/js/2.d19952f1.chunk.js": "/blue-7-labs/pro-sidebar/static/js/2.d19952f1.chunk.js",
+    "static/js/2.d19952f1.chunk.js.map": "/blue-7-labs/pro-sidebar/static/js/2.d19952f1.chunk.js.map",
+    "index.html": "/blue-7-labs/pro-sidebar/index.html",
+    "precache-manifest.fc8fd689b814a83b1b9cb0be12d37186.js": "/blue-7-labs/pro-sidebar/precache-manifest.fc8fd689b814a83b1b9cb0be12d37186.js",
+    "service-worker.js": "/blue-7-labs/pro-sidebar/service-worker.js",
+    "static/css/main.35d4ba75.chunk.css.map": "/blue-7-labs/pro-sidebar/static/css/main.35d4ba75.chunk.css.map",
+    "static/js/2.d19952f1.chunk.js.LICENSE.txt": "/blue-7-labs/pro-sidebar/static/js/2.d19952f1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86390db0.js",
+    "static/js/2.d19952f1.chunk.js",
+    "static/css/main.35d4ba75.chunk.css",
+    "static/js/main.e7b87bbc.chunk.js"
+  ]
+}

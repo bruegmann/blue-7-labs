@@ -1,0 +1,51 @@
+@import url('https://rsms.me/inter/inter.css');
+
+$primary: darken(#005095, 5%);
+
+
+// Components
+//
+
+$border-radius: .5rem;
+$border-radius-lg: .7rem;
+$border-radius-sm: .3rem;
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+// Buttons
+//
+
+$btn-border-radius: 1000px;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+
+// Forms
+//
+
+$custom-checkbox-indicator-border-radius: $border-radius-sm;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$theme: #4f1eff;
+
+$theme: $primary !default;
+
+/* React Pro Sidebar variables */
+$sidebar-bg-color: $theme !default;
+$sidebar-color: darken($white, 10%) !default;
+$sidebar-width: 270px !default;
+$sidebar-collapsed-width: 80px !default;
+$highlight-color: $white !default;
+$submenu-bg-color: darken($sidebar-bg-color, 10%) !default;
+$submenu-bg-color-collapsed: #2b2b2b !default;
+$icon-bg-color: #2b2b2b !default;
+$icon-size: 35px !default;
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+
+
+@import "../../node_modules/react-pro-sidebar/dist/scss/styles.scss";
