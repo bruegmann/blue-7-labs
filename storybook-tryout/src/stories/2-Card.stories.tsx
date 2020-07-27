@@ -6,4 +6,5 @@ export default {
     component: Card
 };
 
-export const HelloWorld = () => (<Card>Hello World</Card>);
+export const CardRounded = () => (<Card rounded>Hello World</Card>);
+export const CardNotRounded = () => (<Card rounded={false}>Hello World</Card>);
