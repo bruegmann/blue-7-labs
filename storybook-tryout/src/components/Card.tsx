@@ -8,7 +8,7 @@ export interface ICardProps {
 }
 
 export const Card = ({ children, rounded }: ICardProps) => (
-    <div className={cx(styles.card, { [styles.rounded]: rounded })}>
+    <div className={cx(styles.card, { [styles.rounded]: rounded })} data-testid="card">
         {children}
     </div>
 );

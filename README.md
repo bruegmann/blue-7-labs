@@ -5,7 +5,7 @@ Here are some experiments for Blue 7.
 List of demo pages:
 * [groundup-1](https://bruegmann.github.io/blue-7-labs/groundup-1)
 * [pro-sidebar](https://bruegmann.github.io/blue-7-labs/pro-sidebar)
-* [storybook-tryout](https://bruegmann.github.io/blue-7-labs/storybook-tryout)
+* [storybook-tryout](https://bruegmann.github.io/blue-7-labs/storybook-tryout/)
 
 
 ## Create new demo build
